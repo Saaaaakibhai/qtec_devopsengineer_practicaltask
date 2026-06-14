@@ -142,11 +142,11 @@ cd qtec_devopsengineer_practicaltask
 
 docker compose up --build
 
----
-
 ## Project Structure
 
+```text
 qtec_devopsengineer_practicaltask/
+│
 ├── app/
 │   ├── main.go
 │   ├── go.mod
@@ -161,9 +161,8 @@ qtec_devopsengineer_practicaltask/
 │
 ├── docker-compose.yml
 ├── .gitignore
-├── README.md
-
----
+└── README.md
+```
 
 ## Security Practices
 
