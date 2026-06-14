@@ -1,0 +1,15 @@
+# Go build
+*.exe
+*.out
+server
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+
+
