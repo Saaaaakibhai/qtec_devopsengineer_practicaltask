@@ -1,24 +1,27 @@
-# Use official Go image (build stage)
+# Build stage
 FROM golang:1.26-alpine AS builder
 
 WORKDIR /app
 
-COPY go.mod ./
-COPY main.go ./
+# Copy dependency files FIRST (important)
+COPY go.mod go.sum ./
 
+RUN go mod download
+
+# Copy source code
+COPY . .
+
+# Build binary
 RUN go build -o server main.go
 
 
-# Minimal production image
+# Runtime stage
 FROM alpine:latest
 
 WORKDIR /app
 
-# Copy compiled binary from builder
 COPY --from=builder /app/server .
 
-# Expose port
 EXPOSE 8080
 
-# Run app
 CMD ["./server"]
