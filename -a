@@ -1,0 +1,19 @@
+○ docker.service - Docker Application Container Engine
+     Loaded: loaded (]8;;file://sakib-MS-7C88/usr/lib/systemd/system/docker.service/usr/lib/systemd/system/docker.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: inactive (dead) since Sun 2026-06-14 16:57:55 +06; 1min 9s ago
+   Duration: 35.570s
+TriggeredBy: ○ docker.socket
+       Docs: ]8;;https://docs.docker.comhttps://docs.docker.com]8;;
+   Main PID: 33640 (code=exited, status=0/SUCCESS)
+        CPU: 238ms
+
+Jun 14 16:57:19 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:19.597075568+06:00" level=info msg="Completed buildkit initialization"
+Jun 14 16:57:19 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:19.601161212+06:00" level=info msg="Daemon has completed initialization"
+Jun 14 16:57:19 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:19.601198852+06:00" level=info msg="API listen on /run/docker.sock"
+Jun 14 16:57:19 sakib-MS-7C88 systemd[1]: Started docker.service - Docker Application Container Engine.
+Jun 14 16:57:55 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:55.171486393+06:00" level=info msg="Processing signal 'terminated'"
+Jun 14 16:57:55 sakib-MS-7C88 systemd[1]: Stopping docker.service - Docker Application Container Engine...
+Jun 14 16:57:55 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:55.174296043+06:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Jun 14 16:57:55 sakib-MS-7C88 dockerd[33640]: time="2026-06-14T16:57:55.176247159+06:00" level=info msg="Daemon shutdown complete"
+Jun 14 16:57:55 sakib-MS-7C88 systemd[1]: docker.service: Deactivated successfully.
+Jun 14 16:57:55 sakib-MS-7C88 systemd[1]: Stopped docker.service - Docker Application Container Engine.
