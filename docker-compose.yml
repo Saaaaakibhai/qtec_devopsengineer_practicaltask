@@ -3,9 +3,17 @@ version: "3.8"
 services:
   app:
     build: ./app
-    container_name: qtec-app
-    ports:
-      - "8080:8080"
+    # REMOVED: container_name (allows scaling multiple instances)
+    # REMOVED: host port mapping "8080:8080" to prevent port locking
+    expose:
+      - "8080" # Exposes port only internally inside the Docker network
+    restart: always
+    deploy:
+      replicas: 2 # Ensures there are always instances running
+      update_config:
+        order: start-first # Starts new containers BEFORE stopping the old ones
+        delay: 5s
+        failure_action: rollback
 
   nginx:
     image: nginx:alpine
@@ -16,3 +24,4 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - app
+    restart: always
