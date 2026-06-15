@@ -1,27 +1,36 @@
-# Build stage
-FROM golang:1.26-alpine AS builder
+# ── Stage 1: Build ────────────────────────────────────────────────────────────
+FROM golang:1.21-alpine AS builder
 
-WORKDIR /app
+# Install git for go module downloads
+RUN apk add --no-cache git ca-certificates
 
-# Copy dependency files FIRST (important)
+WORKDIR /build
+
+# Cache dependencies separately from source
 COPY go.mod go.sum ./
-
 RUN go mod download
 
-# Copy source code
+# Copy source and build
 COPY . .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
+    go build -ldflags="-w -s" -o /app/server .
 
-# Build binary
-RUN go build -o server main.go
+# ── Stage 2: Runtime ──────────────────────────────────────────────────────────
+FROM scratch
 
+# Copy CA certs for HTTPS if needed
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
-# Runtime stage
-FROM alpine:latest
+# Copy compiled binary
+COPY --from=builder /app/server /server
 
-WORKDIR /app
+# Non-root user (numeric UID for scratch compatibility)
+USER 65532:65532
 
-COPY --from=builder /app/server .
+# Environment variables with defaults
+ENV PORT=8080 \
+    APP_ENV=production
 
 EXPOSE 8080
 
-CMD ["./server"]
+ENTRYPOINT ["/server"]

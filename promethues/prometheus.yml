@@ -1,7 +1,13 @@
 global:
-  scrape_interval: 15s
+  scrape_interval:     15s
+  evaluation_interval: 15s
 
 scrape_configs:
   - job_name: 'qtec-api'
     static_configs:
-      - targets: ['app:8081'] # Dynamically tracks your application container
+      - targets: ['app:8080']   # Fixed: was incorrectly 8081
+    metrics_path: /metrics
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']

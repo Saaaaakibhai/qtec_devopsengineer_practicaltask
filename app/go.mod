@@ -1,8 +1,8 @@
-module qtec-api
+module github.com/Saaaaakibhai/qtec-api
 
-go 1.26.3
-
-require github.com/prometheus/client_golang v1.23.2
+go 1.21
+ 
+require github.com/prometheus/client_golang v1.19.1
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
