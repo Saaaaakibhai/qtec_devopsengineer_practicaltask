@@ -182,6 +182,25 @@ This system can be deployed on:
 - DigitalOcean
 
 ---
+screen shot
+1. ec2 instance
+<img width="1911" height="959" alt="Screenshot from 2026-06-15 11-16-05" src="https://github.com/user-attachments/assets/bc60b7b0-7c28-45d7-bfc8-9731e6433d7e" />
+2. grafana
+
+   <img width="1911" height="959" alt="Screenshot from 2026-06-15 11-15-53" src="https://github.com/user-attachments/assets/926b8564-152a-4340-a5b6-e8c157303dbb" />
+
+3. promethues <img width="1911" height="959" alt="Screenshot from 2026-06-15 11-16-15" src="https://github.com/user-attachments/assets/584383a6-9206-4f6b-909f-47c8aa6d8a11" />
+
+4. github action ci cd pipeline <img width="1911" height="959" alt="Screenshot from 2026-06-15 11-16-30" src="https://github.com/user-attachments/assets/a3c37256-4cb4-4889-bf3a-c97f8672db9b" />
+
+
+5. Handle 100 requeest/sec
+   <img width="1912" height="960" alt="Screenshot from 2026-06-15 11-36-36" src="https://github.com/user-attachments/assets/3dccfec0-df61-4355-ab52-b6e6d590eb41" />
+<img width="1912" height="960" alt="Screenshot from 2026-06-15 11-36-27" src="https://github.com/user-attachments/assets/5aef9a4d-5a00-4111-8c9f-35220db87450" />
+
+
+6. docker
+   <img width="1912" height="960" alt="Screenshot from 2026-06-15 11-40-38" src="https://github.com/user-attachments/assets/49e01455-4825-4ba5-9444-a84db1a46c81" />
 
 ## Skills Demonstrated
 
