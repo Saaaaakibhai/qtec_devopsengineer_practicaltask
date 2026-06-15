@@ -202,6 +202,10 @@ screen shot
 6. docker
    <img width="1912" height="960" alt="Screenshot from 2026-06-15 11-40-38" src="https://github.com/user-attachments/assets/49e01455-4825-4ba5-9444-a84db1a46c81" />
 
+7. zero-downtime deployment works
+<img width="1912" height="960" alt="Screenshot from 2026-06-15 11-52-58" src="https://github.com/user-attachments/assets/89f5a473-1569-40e2-9543-40959524dd27" />
+
+
 ## Skills Demonstrated
 
 - Docker containerization
