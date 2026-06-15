@@ -184,7 +184,9 @@ This system can be deployed on:
 ---
 screen shot
 1. ec2 instance
-<img width="1911" height="959" alt="Screenshot from 2026-06-15 11-16-05" src="https://github.com/user-attachments/assets/bc60b7b0-7c28-45d7-bfc8-9731e6433d7e" />
+<img width="1473" height="839" alt="Web_Photo_Editor(1)" src="https://github.com/user-attachments/assets/ab6f0d65-e60b-43d0-81aa-5b97bf916ea8" />
+
+
 2. grafana
 
    <img width="1911" height="959" alt="Screenshot from 2026-06-15 11-15-53" src="https://github.com/user-attachments/assets/926b8564-152a-4340-a5b6-e8c157303dbb" />
@@ -204,6 +206,12 @@ screen shot
 
 7. zero-downtime deployment works
 <img width="1912" height="960" alt="Screenshot from 2026-06-15 11-52-58" src="https://github.com/user-attachments/assets/89f5a473-1569-40e2-9543-40959524dd27" />
+
+8. Nginix Arcitecture and network
+
+<img width="1912" height="960" alt="Screenshot from 2026-06-15 12-15-27" src="https://github.com/user-attachments/assets/c6d6ee1c-8bed-4dd4-b2ca-9bd128552daf" />
+<img width="1912" height="960" alt="Screenshot from 2026-06-15 12-15-19" src="https://github.com/user-attachments/assets/9eb266bd-c40c-4f56-a5a7-6b2d1b37b8a2" />
+
 
 
 ## Skills Demonstrated
