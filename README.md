@@ -21,8 +21,6 @@ This project fully meets **all core requirements** of the DevOps Engineer practi
 
 **Screenshots**:
 - AWS EC2 Instance: ![EC2](https://github.com/user-attachments/assets/ab6f0d65-e60b-43d0-81aa-5b97bf916ea8)
-- Nginx Architecture: ![Nginx](https://github.com/user-attachments/assets/c6d6ee1c-8bed-4dd4-b2ca-9bd128552daf)
-
 ---
 
 ### API Endpoints
